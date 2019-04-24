@@ -7,7 +7,7 @@
 #include "scenes.h" 			// JA PIERDOLE
 
 void showMenu() {
-	char choice;
+	int choice;
 	int chuj = 1;
 	char choice2;
 
@@ -50,6 +50,8 @@ void showMenu() {
 			refresh();
 			usleep(1000000);
 			exit(EXIT_SUCCESS);
+			break;
+		case KEY_RESIZE :
 			break;
 		default :
 			printw("||]there's no such an option twat");

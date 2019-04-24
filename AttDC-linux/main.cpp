@@ -13,8 +13,19 @@ int main()
 	printw( "=============================================================================================================\n"); 
 	printw( "Resize your window so the above dongers is displayed in one line\n");
 	printw( "Press any key to continue ");
-	getch();
-	//startFight(20,40,1000);
-	showMenu();
+	int choice;
+	for(;;){
+		choice = getch();
+		switch (choice){
+		case KEY_RESIZE :
+			break;
+		//case NULL :
+			//break;
+		default :
+			//startFight(20,40,1000);
+			showMenu();
+			break;
+		}
+	}
 	return 0;
 }
