@@ -8,6 +8,8 @@ int main()
 	atexit(exit);
 	noecho();
 	cbreak();							//buffering off
+	keypad(stdscr, TRUE);
+	curs_set(0);
 	//WINDOW * win = newwin(26,128,1,1);
 	clear();
 	printw( "=============================================================================================================\n"); 
