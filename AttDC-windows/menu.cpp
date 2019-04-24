@@ -1,9 +1,4 @@
-﻿#include <string> //getline and string kind of shit
-#include <iostream> //every fooken thing
-#include <cstdlib> //exit
-#include <Windows.h> //sleep
-#include <conio.h> //press any key to continue
-#include "scenes.h" //main 
+﻿#include "scenes.h"
 
 void showMenu() {
 	std::string sChoice;
@@ -28,7 +23,7 @@ void showMenu() {
 		Sleep(animationTime);
 		std::cout << "==] 5.Kys                                                       [==\n";
 		std::cout << "===================================================================\n";
-		getline(std::cin, sChoice);
+		sChoice = _getch();
 		choice = std::stoi(sChoice);
 		switch (choice)
 		{
@@ -54,8 +49,8 @@ void showMenu() {
 			Sleep(animationTime);
 			std::cout << "If you don't see anything on the top of the window, enlarge it just a little bit.\n";
 			Sleep(animationTime);
-			std::cout << "Press enter to continue...\n";
-			clearCin();
+			std::cout << "Press any key to continue...\n";
+			_getch();
 			break;
 		case 5:
 			system("cls");
@@ -66,8 +61,8 @@ void showMenu() {
 			system("cls");
 			std::cout << "There's no such option.\n";
 			Sleep(optionTime);
-			std::cout << "Press enter to continue...\n";
-			clearCin();
+			std::cout << "Press any key to continue...\n";
+			_getch();
 			break;
 		}
 	}

@@ -1,8 +1,4 @@
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
-#include <Windows.h>
-#include <string>
 #include "scenes.h"
 
 void startFight(int minWeaponDamage, int maxWeaponDamage, int enemyHealth, std::string enemyName, int playerHealth, int minEnemyDamage, int maxEnemyDamage)

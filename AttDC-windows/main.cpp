@@ -1,7 +1,3 @@
-#include <iostream>
-#include <string>
-#include <io.h>
-#include <fcntl.h>
 #include "scenes.h"
 
 int main()
