@@ -1,4 +1,3 @@
-#include <iostream>
 #include "scenes.h"
 
 void clearCin()

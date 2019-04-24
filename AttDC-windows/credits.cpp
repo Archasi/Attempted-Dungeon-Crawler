@@ -1,5 +1,3 @@
-#include <iostream>
-#include <Windows.h>
 #include "scenes.h"
 
 void showCredits()
@@ -27,6 +25,6 @@ void showCredits()
 		Sleep(animationTime);
 		std::cout << "===============================================\n";
 		Sleep(animationTime);
-		std::cout << "Press enter to continue...\n";
-		clearCin();
+		std::cout << "Press any key to continue...\n";
+		_getch();
 }
