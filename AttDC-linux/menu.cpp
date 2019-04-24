@@ -19,6 +19,7 @@ void showMenu() {
 	init_pair(2,7,0);
 	init_pair(3,7,0);
 	init_pair(4,7,0);
+	init_pair(5,7,0);
 
 	clear();
 	while (1)
@@ -27,15 +28,17 @@ void showMenu() {
 		printw("                                             [Linux edition]                        \n");
 		printw("                                          [by MPDGamesCompany]                      \n");										
 		printw("##===============================================[Menu]====================================================##\n\n"); 
-		printw("                                              "); attron(COLOR_PAIR(1)); printw("[1.New Game]\n\n"); attroff(COLOR_PAIR(1)); 
-		printw("                                              "); attron(COLOR_PAIR(2)); printw("[2.Continue]\n\n"); attroff(COLOR_PAIR(2));
-		printw("                                              "); attron(COLOR_PAIR(3)); printw("[3.Credits ]\n\n"); attroff(COLOR_PAIR(3));
-		printw("                                              "); attron(COLOR_PAIR(4)); printw("[4.Kys     ]\n");   attroff(COLOR_PAIR(4));  
+		printw("                                              "); attron(COLOR_PAIR(1)); printw("[1.New Game ]\n\n"); attroff(COLOR_PAIR(1)); 
+		printw("                                              "); attron(COLOR_PAIR(2)); printw("[2.Continue ]\n\n"); attroff(COLOR_PAIR(2));
+		printw("                                              "); attron(COLOR_PAIR(3)); printw("[3.Credits  ]\n\n"); attroff(COLOR_PAIR(3));
+		printw("                                              "); attron(COLOR_PAIR(4)); printw("[4. Screen  ]\n");   attroff(COLOR_PAIR(4));
+		printw("                                              "); attron(COLOR_PAIR(4)); printw("[Calibration]\n\n"); attroff(COLOR_PAIR(4));
+		printw("                                              "); attron(COLOR_PAIR(5)); printw("[4.Kys      ]\n");   attroff(COLOR_PAIR(5));    
 		printw("##=========================================================================================================##\n");
 		refresh();
 		switch (getch()){
 			case KEY_DOWN :
-				if(cursor<4){
+				if(cursor<5){
 					init_pair(cursor,7,0);
 					cursor++;
 					init_pair(cursor,0,7);
@@ -80,6 +83,26 @@ void selection(short a){
 			getch();
 		break;
 		case 4:
+			clear();
+			printw( "=============================================================================================================\n"); 
+			printw( "Resize your window so the above dongers is displayed in one line\n");
+			printw( "Press any key to continue ");
+			int choice;
+			for(;;){
+				choice = getch();
+				switch (choice){
+				case KEY_RESIZE :
+					break;
+					//case NULL :
+					//break;
+				default :
+					//startFight(20,40,1000);
+					showMenu();
+					break;
+				}
+			}
+			break;
+		case 5:
 			clear();
 			printw("||]so go fuccc urself\n");
 			refresh();

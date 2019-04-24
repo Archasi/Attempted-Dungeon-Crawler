@@ -1,33 +1,28 @@
 #include <iostream>
 #include <ncurses.h>
 #include "scenes.h"
+#include "item.h"
+#include "tile.h"
+#include <string>
 
 int main()
 {
-	initscr();
-	atexit(exit);
-	noecho();
-	cbreak();							//buffering off
-	keypad(stdscr, TRUE);
-	curs_set(0);
+	//initscr();
+	//atexit(exit);
+	//noecho();
+	//cbreak();							//buffering off
+	//keypad(stdscr, TRUE);
+	//curs_set(0);
+	//showMenu();
 	//WINDOW * win = newwin(26,128,1,1);
 	clear();
-	printw( "=============================================================================================================\n"); 
-	printw( "Resize your window so the above dongers is displayed in one line\n");
-	printw( "Press any key to continue ");
-	int choice;
-	for(;;){
-		choice = getch();
-		switch (choice){
-		case KEY_RESIZE :
-			break;
-		//case NULL :
-			//break;
-		default :
-			//startFight(20,40,1000);
-			showMenu();
-			break;
-		}
-	}
+	tile *a = new tile();
+	item *c = new item();
+	item x[1] = {*c};
+	tile *b = new tile("foo", {});
+
+	std::cout << b->getDescription();
+	//tile b("foo", x);
+
 	return 0;
 }

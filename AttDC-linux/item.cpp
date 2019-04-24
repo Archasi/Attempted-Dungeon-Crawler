@@ -3,7 +3,7 @@
 //constructors
 item::item()
 {
-	setItemName("def");
+	setItemName("NULL");
 }
 
 item::item(std::string itemname)
