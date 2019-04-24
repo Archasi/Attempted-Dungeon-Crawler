@@ -19,7 +19,7 @@ void showIntro()
 	printw("||]You can save your game at any time by going to the menu and choosing 'save'.                            ||\n");
 	printw("||]H A V E   F U N !                                                                                       ||\n");
 	printw("##=========================================================================================================##\n||]");
-	printw("Press enter to continue");
+	printw("Press any key to continue");
 	refresh(); 
 	getch();
 }
