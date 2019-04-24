@@ -8,7 +8,7 @@ class weapon :
 public:
 	//constructors
 	weapon();
-	weapon(std::string itemname, int maxDmg, int minDmg);
+	weapon(std::string itemname, int itvalue, int maxDmg, int minDmg);
 
 	//destructor
 	~weapon();

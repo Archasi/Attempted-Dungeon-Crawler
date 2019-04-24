@@ -158,7 +158,6 @@
     <ClCompile Include="item.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="progControl.cpp" />
     <ClCompile Include="weapon.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -18,5 +18,3 @@ void showMenu(); //menu.cpp
 void showIntro(); //intro.cpp
 void showCredits(); //credits.cpp
 void startFight(int minWeaponDamage, int maxWeaponDamage, int enemyHealth, std::string enemyName, int playerHealth, int minEnemyDamage, int maxEnemyDamage); //fight.cpp
-
-void clearCin(); //progControl.cpp

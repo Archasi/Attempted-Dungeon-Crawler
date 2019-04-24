@@ -3,13 +3,12 @@
 
 int main()
 {
-	item chuj("chuj");
-	weapon messner("messner", 25, 40);
+	item chuj("chuj", 700);
+	weapon messner("messner",50000, 25, 40);
 	const int size = 2;
 	item chuje[size];
 	chuje[0] = chuj;
 	chuje[1] = messner;
-	std::string AAAA;
 	for (int i = 0; i < size; i++)
 	{
 		std::cout << chuje[i].getItemName() << std::endl;

@@ -8,9 +8,10 @@ weapon::weapon()
 	setMinWeaponDamage(1);
 }
 
-weapon::weapon(std::string itemname, int maxDmg, int minDmg)
+weapon::weapon(std::string itemname, int itvalue, int maxDmg, int minDmg)
 {
 	setItemName(itemname);
+	setValue(500);
 	setMaxWeaponDamage(maxDmg);
 	setMinWeaponDamage(minDmg);
 }

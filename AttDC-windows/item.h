@@ -9,7 +9,7 @@ class item
 public:
 	//constructors
 	item();
-	item(std::string itemname);
+	item(std::string itemname, int value);
 
 	//destructor
 	~item();
@@ -17,8 +17,11 @@ public:
 	//accessors
 	std::string getItemName();
 	void setItemName(std::string itemname);
+	int getValue();
+	void setValue(int value);
 private:
 	std::string itemName;
+	int value;
 };
 
 #endif
