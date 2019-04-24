@@ -155,12 +155,16 @@
     <ClCompile Include="credits.cpp" />
     <ClCompile Include="fight.cpp" />
     <ClCompile Include="intro.cpp" />
+    <ClCompile Include="item.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="progControl.cpp" />
+    <ClCompile Include="weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="item.h" />
     <ClInclude Include="scenes.h" />
+    <ClInclude Include="weapon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
