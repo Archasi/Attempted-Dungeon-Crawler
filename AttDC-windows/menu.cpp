@@ -21,7 +21,7 @@ void showMenu() {
 		Sleep(animationTime);
 		std::cout << "==] 4.Screen Calibration                                        [==\n";  
 		Sleep(animationTime);
-		std::cout << "==] 5.Kys                                                       [==\n";
+		std::cout << "==] 5.End Game                                                  [==\n";
 		std::cout << "===================================================================\n";
 		sChoice = _getch();
 		choice = std::stoi(sChoice);
@@ -43,7 +43,7 @@ void showMenu() {
 			break;
 		case 4:
 			system("cls");
-			std::cout << "=============================================================================================================\n";
+			std::cout << "==============================================================================================================\n";
 			Sleep(animationTime);
 			std::cout << "Resize your window so that the above text is displayed in one line.\n";
 			Sleep(animationTime);
@@ -55,7 +55,7 @@ void showMenu() {
 		case 5:
 			system("cls");
 			std::cout << "Exiting game...";
-			Sleep(optionTime);
+			Sleep(endTime);
 			exit(EXIT_SUCCESS);
 		default:
 			system("cls");

@@ -2,6 +2,8 @@
 
 #define animationTime 47 //animation wait time in ms
 #define optionTime 600 //option exeption wait time in ms
+#define fightTime 950 //wait time between attacks in ms
+#define endTime 3450 // wait time at the end of some scenes in ms
 #define ignoreCharAmount 2147483647 //amount of characters to ignore (also highest possible value of signed integer32 [0x7FFFFFFF])
 
 #include <conio.h> //press any key to continue
