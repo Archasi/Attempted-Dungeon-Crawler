@@ -13,7 +13,7 @@ class tile{
         std::string description;
         
         //enemy enemies[];
-        item onFloor[cap];
+        item onFloor[cap]; //TODO - Dynamic Array instead of fixed size array
     public:
         //constructors
         tile();
@@ -28,7 +28,7 @@ class tile{
         item * getOnFloor();
 
         //setters
-        bool appendItem(item);
+        bool setItem(item item);
 };
 
 #endif

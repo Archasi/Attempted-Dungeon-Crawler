@@ -18,10 +18,10 @@ tile::tile(
 std::string tile::getDescription(){return description;}
 item * tile::getOnFloor(){return onFloor;}
 
-bool tile::appendItem(item itemAppended){
+bool tile::setItem(item item){
     for(short i=0;i<=cap;i++){
         if (onFloor[i].getItemName() == "NULL"){
-            onFloor[i] = itemAppended;
+            onFloor[i] = item;
             return true;
         }
     }
