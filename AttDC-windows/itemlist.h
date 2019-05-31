@@ -9,7 +9,7 @@
 class itemlist
 {
 public:
-	enum itemnames {};
+	static enum itemnames {};
 	void setItem(item item, int id);
 private:
 	item itemlist[500];

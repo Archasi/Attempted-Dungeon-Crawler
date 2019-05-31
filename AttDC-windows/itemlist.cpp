@@ -1,6 +1,6 @@
 #include "itemlist.h"
 
-enum itemnames {
+static enum itemnames {
 	yellowDoorKey = 0,
 	redDoorKey = 1,
 	blueDoorKey = 2,
@@ -30,4 +30,7 @@ enum itemnames {
 	annodominium = 403,
 	ciulenZerstorer = 499
 };
-
+void setItem(item item, int id)
+{
+	item.setItemName(itemnames.402);
+}

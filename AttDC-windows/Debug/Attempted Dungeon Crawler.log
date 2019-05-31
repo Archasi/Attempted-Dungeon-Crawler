@@ -1,0 +1,12 @@
+﻿  credits.cpp
+  fight.cpp
+  intro.cpp
+  item.cpp
+  itemlist.cpp
+  menu.cpp
+  main.cpp
+  tile.cpp
+  weapon.cpp
+  Generowanie kodu...
+C:\Users\Rob\source\repos\Attempted-Dungeon-Crawler\AttDC-windows\fight.cpp(20,21): warning C4244:  "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+  Attempted Dungeon Crawler.vcxproj -> C:\Users\Rob\source\repos\Attempted-Dungeon-Crawler\AttDC-windows\Debug\Attempted_Dungeon_Crawler.exe
