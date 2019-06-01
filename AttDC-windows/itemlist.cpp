@@ -32,5 +32,5 @@ static enum itemnames {
 };
 void setItem(item item, int id)
 {
-	item.setItemName(itemnames.402);
+	;
 }

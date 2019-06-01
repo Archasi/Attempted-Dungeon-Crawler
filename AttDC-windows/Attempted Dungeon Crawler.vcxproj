@@ -154,6 +154,7 @@
   <ItemGroup>
     <ClCompile Include="credits.cpp" />
     <ClCompile Include="fight.cpp" />
+    <ClCompile Include="game.cpp" />
     <ClCompile Include="intro.cpp" />
     <ClCompile Include="item.cpp" />
     <ClCompile Include="itemlist.cpp" />

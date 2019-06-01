@@ -2,7 +2,6 @@
 
 void showIntro()
 {
-	
 	system("cls");
 	std::cout << "==============================================================================================================\n";
 	Sleep(animationTime);
@@ -30,5 +29,5 @@ void showIntro()
 	Sleep(animationTime);
 	std::cout << "Press any key to continue...\n";
 	_getch();
-	//classcall after that
+	startGame();
 }

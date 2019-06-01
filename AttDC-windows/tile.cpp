@@ -4,26 +4,40 @@
 
 tile::tile(){
     description = "Basic tile";
-    //onFloor[] = 
 }
 
-tile::tile(
-    std::string dscrpt,
-    item * floor){
+tile::tile(std::string description, item itemsOnFloor[], item itemsInChest[], int entrance){
     
-    this->description = dscrpt;
-    //for(int i=0;i<sizeof(floor);i++){this->onFloor[i] = floor[i];}
+    this->description = description;
+	setItems(itemsOnFloor, itemsInChest);
 }
 
-std::string tile::getDescription(){return description;}
-item * tile::getOnFloor(){return onFloor;}
+std::string tile::getDescription(){ return description; }
+int tile::getEntrance() { return entrance; }
+item tile::getItemOnFloor(int id){ return onFloor[id]; }
+item tile::getItemInChest(int id) { return inChest[id]; }
 
-bool tile::setItem(item item){
+void tile::setItems(item itemsOnFloor[], item itemsInChest[]){
     for(short i=0;i<=cap;i++){
-        if (onFloor[i].getItemName() == "NULL"){
-            onFloor[i] = item;
-            return true;
+        if (itemsOnFloor[i].getItemName() != "NULL"){
+            onFloor[i] = itemsOnFloor[i];
         }
+		if (itemsInChest[i].getItemName() != "NULL"){
+			inChest[i] = itemsInChest[i];
+		}
     }
-    return false;
+}
+
+void tile::setItem(item item, int id, bool isInChest){
+	if(isInChest == true){
+		inChest[id] = item;
+	}
+	else{
+		onFloor[id] = item;
+	}
+}
+
+void tile::setEntrance(int direction)
+{
+	this->entrance = direction;
 }
